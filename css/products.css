@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Viaoda Libre', serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.top-header{
+    width: 100%;
+    height: 2rem;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 5rem;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}   
+.btn{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: grey;
+    color: white;
+}
+.other{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: flex-end;
+}
+.other a{
+    
+    padding-left: 2rem;
+}
+.top-content{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.top-content i {
+    margin-top: 1px; 
+}
+.top-content a{
+    border-bottom: none;
+    transition: all 0.2s;
+}
+.top-content a:hover{
+    border-bottom: 2px solid black;
+}
+.filter-category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+}
+.filter-price{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+.filter-price input{
+    width: 4rem;
+    height: 2rem;
+}
+.btn-price{
+    display: inline-block;
+    width: 9rem;
+    height: 1.5rem;
+    margin-top: 5px;
+    background-color: white;
+}
+.btn-price h2{
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.btn-price:hover{
+    background-color: black;
+   
+}
+.btn-price:hover h2{
+    visibility: visible;
+    opacity: 1;
+}
+.content{
+    display: flex;
+
+}
+.right-content{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.products{
+    width: calc(25% + 1rem);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.products img{
+    width: 100%;
+    object-fit: cover;
+    padding-right: 1rem;
+}
+/* .products:last-child{
+    padding-right: 1rem;
+    
+}
+.products:last-child img{
+    width: 100%;
+} */
+.btn-product{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    transform: translate(-10%,-10%);
+    transition: all 0.3s linear;
+}
+.products:hover .btn-product{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.products:hover .btn-product i{
+    color: white;
+}
+.botproduct{
+    display: flex;
+    flex-direction: column;
+    
+}
+.botproduct span{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;  
+}
+.botproduct a{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
